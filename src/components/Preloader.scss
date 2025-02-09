@@ -48,7 +48,7 @@
         aspect-ratio: 1/1;
         transition: 0.4s all ease-out;
 
-        animation: spinX 1s linear infinite; // ✅ X-axis spin animation applied
+        animation: spinX 1.5s linear infinite; // ✅ X-axis spin animation applied
 
         &-hidden {
             opacity: 0;
@@ -91,15 +91,3 @@
         transform: rotateY(360deg);
     }
 }
-
-path {
-      stroke-dasharray: 50000; 
-      stroke-dashoffset: 50000; 
-      animation: draw 1s linear forwards;
-    }
-
-    @keyframes draw {
-      to {
-        stroke-dashoffset: 0; 
-      }
-    }

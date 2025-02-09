@@ -25,7 +25,7 @@ export function  BranchSvg(props) {
                 preserveAspectRatio="xMidYMid meet">
     
                 <g transform="translate(0.000000,4000.000000) scale(0.100000,-0.100000)"
-                    fill="none" stroke="rgb(154,250,50)" stroke-width="10">
+                    fill="none" stroke="rgb(42, 209, 4)" stroke-width="10">
                     <path
                         d="M2664 39993 c15 -4 16 -7 5 -14 -11 -7 -9 -9 8 -9 13 0 24 -8 28 -20
 6 -19 -2 -87 -15 -127 -1 -5 -3 -12 -5 -18 -1 -5 -3 -12 -4 -15 -1 -3 -4 -18

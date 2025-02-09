@@ -13,7 +13,8 @@
     width: 75px;
     height: 75px;
     border-radius: 100%;
-    background-color: var(--theme-secondary);
+    // background-color: var(--theme-secondary);
+     background-color: green;
     pointer-events: none;
     user-select: none;
     transition: 0.2s background-color ease-in;
@@ -34,5 +35,6 @@
 }
 
 .animated-cursor-circle-highlight {
-    background-color: var(--theme-highlight-2);
+    //background-color: var(--theme-highlight-2);
+    background-color:green; 
 }
