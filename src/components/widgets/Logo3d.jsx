@@ -10,7 +10,7 @@ function SympoLogo() {
     }}>
       <Canvas
         camera={{
-          position: [0, 3, 6]
+          position: [0, 0, 4]
         }}
         gl={{ alpha: true }}
         style={{ background: 'transparent' }}
@@ -21,8 +21,8 @@ function SympoLogo() {
           minPolarAngle={Math.PI / 2 - Math.PI * 0.1}
           maxPolarAngle={Math.PI / 2 + Math.PI * 0.1}
         />
-        <Environment preset='forest' />
-        <ambientLight intensity={10} color={"green"} />
+        <Environment preset='forest'  background backgroundIntensity={0.5} backgroundBlurriness={0.08}/>
+        <ambientLight intensity={15} color={"green"} />
 
         <Suspense fallback={
           <Html>
@@ -53,7 +53,7 @@ function Logo(props) {
     }
   });
   return (
-    <group position={[0, 0, 0]} scale={8} rotation-y={Math.PI * 0.5}>
+    <group position={[0, 0, 0]} scale={4} rotation-y={Math.PI * 0.5}>
       <mesh
         // ref={meshRef}
         receiveShadow
@@ -61,7 +61,7 @@ function Logo(props) {
       >
         <meshPhysicalMaterial
           metalness={0.9}
-          roughness={0}
+          roughness={0.1}
           color="silver"
           clearcoat={1}
           reflectivity={1}
